@@ -5,13 +5,14 @@ import (
 	"encoding/base64"
 	"encoding/json"
 	"errors"
+	"net/http"
+	"os"
+
 	"github.com/cenkalti/rpc2"
 	"github.com/cenkalti/rpc2/jsonrpc"
 	"github.com/gorilla/websocket"
-	"github.com/jae-jae/arigo/internal/pkg/wsrpc"
-	"github.com/jae-jae/arigo/pkg/aria2proto"
-	"net/http"
-	"os"
+	"github.com/wellmoon/arigo/internal/pkg/wsrpc"
+	"github.com/wellmoon/arigo/pkg/aria2proto"
 )
 
 const (
